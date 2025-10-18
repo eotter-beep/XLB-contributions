@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="xlb",
     version="0.2.1",
-    description="XLB: Accelerated Lattice Boltzmann (XLB) for Physics-based ML",
+    description="XLB: Accelerated Lattice Boltzmann (XLB) for Physics-based ML.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Mehdi Ataei",
@@ -11,15 +11,15 @@ setup(
     license="Apache License 2.0",
     packages=find_packages(),
     install_requires=[
-        "matplotlib>=3.9.2",
-        "numpy>=2.1.2",
-        "pyvista>=0.44.1",
-        "trimesh>=4.4.9",
-        "warp-lang>=1.4.0",
-        "numpy-stl>=3.1.2",
-        "pydantic>=2.9.1",
-        "ruff>=0.6.5",
-        "jax>=0.4.34",  # Base JAX CPU-only requirement
+        "matplotlib>=3.10.7",
+        "numpy>=2.3.4",
+        "pyvista>=0.46.3",
+        "trimesh>=4.8.3",
+        "warp-lang>=1.10.0.dev20251018",
+        "numpy-stl>=3.2.0",
+        "pydantic>=2.12.3",
+        "ruff>=0.14.1",
+        "jax>=0.8.0",  # Base JAX CPU-only requirement
     ],
     extras_require={
         "cuda": ["jax[cuda12]>=0.4.34"],  # For CUDA installations
