@@ -45,8 +45,8 @@ def test_macroscopic_warp(dim, velocity_set, grid_shape, rho, velocity):
 
     rho_calc, u_calc = compute_macro(f_eq, rho_calc, u_calc)
 
-    assert np.allclose(rho_calc.numpy(), rho), f"Computed density should be close to initialized density {rho}"
-    assert np.allclose(u_calc.numpy(), velocity, atol=1e-06), f"Computed velocity should be close to initialized velocity {velocity}"
+    assert np.allclose(rho_calc.numpy(), rho), f"XLBInfo: Computed density should be close to initialized density {rho}"
+    assert np.allclose(u_calc.numpy(), velocity, atol=1e-06), f"XLBInfo: Computed velocity should be close to initialized velocity {velocity}"
 
 
 if __name__ == "__main__":
