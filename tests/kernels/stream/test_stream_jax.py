@@ -62,7 +62,7 @@ def test_stream_operator_jax(dim, velocity_set, grid_shape):
 
     expected = jnp.stack(expected, axis=0)
 
-    assert jnp.allclose(f_streamed, expected), "Streaming did not occur as expected"
+    assert jnp.allclose(f_streamed, expected), "XLBError: Streaming did not occur as expected"
 
 
 if __name__ == "__main__":
